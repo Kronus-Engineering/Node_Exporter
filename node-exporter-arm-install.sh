@@ -63,13 +63,13 @@ echo -e "${GREEN}✓${NC} Service file created at: /usr/local/src/Node_Exporter/
 
 # Enable and start Node Exporter service
 echo -e "\n${YELLOW}[6/6]${NC} Configuring Node Exporter service..."
-echo -e "  ${BLUE}•${NC} Enabling service to start on boot..."
+echo -e "${BLUE}•${NC} Enabling service to start on boot..."
 sudo systemctl enable /usr/local/src/Node_Exporter/node-exporter.service
 check_status "Failed to enable Node Exporter service"
-echo -e "  ${BLUE}•${NC} Starting Node Exporter service..."
+echo -e "${BLUE}•${NC} Starting Node Exporter service..."
 sudo service node-exporter start
 check_status "Failed to start Node Exporter service"
-echo -e "  ${GREEN}✓${NC} Node Exporter service started successfully"
+echo -e "${GREEN}✓${NC} Node Exporter service started successfully"
 
 echo -e "\n${GREEN}===========================================================${NC}"
 echo -e "${GREEN}✓ NODE EXPORTER INSTALLATION COMPLETE!${NC}"
